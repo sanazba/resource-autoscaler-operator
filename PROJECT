@@ -3,7 +3,7 @@
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
 cliVersion: 4.7.0
-domain: baniasadi.autoscaling.io
+domain: baniasadi.io
 layout:
 - go.kubebuilder.io/v4
 projectName: resource-autoscaler-operator
@@ -13,7 +13,7 @@ resources:
     crdVersion: v1
     namespaced: true
   controller: true
-  domain: baniasadi.autoscaling.io
+  domain: baniasadi.io
   group: autoscaling
   kind: ResourceScalerPolicy
   path: github.com/sanazba/resource-autoscaler-operator/api/v1
