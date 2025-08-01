@@ -7,3 +7,23 @@ metadata:
   name: resourcescalerpolicy-sample
 spec:
   # TODO(user): Add fields here
+  targetDeployment:
+    name: nginx-deployment
+    namespace: default
+  scalePolicy:
+    minReplicas: 2
+    maxReplicas: 10
+    scaleUpCooldown: 300s
+    scaleDownCooldown: 600s
+  resourcePolicy:
+    memoryThreshold: 80
+    cpuThreshold: 70
+    adjustmentMode: "both"
+  circuitBreaker:
+    enabled: true
+    failureThreshold: 3
+    recoveryTimeout: 300s
+  costAwareness:
+    enabled: false
+    maxCostPerHour: 10.0
+    budgetThreshold: 80
