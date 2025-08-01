@@ -33,9 +33,9 @@ type ResourceScalerPolicyReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=autoscaling.baniasadi.autoscaling.io,resources=resourcescalerpolicies,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=autoscaling.baniasadi.autoscaling.io,resources=resourcescalerpolicies/status,verbs=get;update;patch
-// +kubebuilder:rbac:groups=autoscaling.baniasadi.autoscaling.io,resources=resourcescalerpolicies/finalizers,verbs=update
+// +kubebuilder:rbac:groups=autoscaling.baniasadi.io,resources=resourcescalerpolicies,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=autoscaling.baniasadi.io,resources=resourcescalerpolicies/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=autoscaling.baniasadi.io,resources=resourcescalerpolicies/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.
