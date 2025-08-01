@@ -1,0 +1,9 @@
+apiVersion: autoscaling.baniasadi.autoscaling.io/v1
+kind: ResourceScalerPolicy
+metadata:
+  labels:
+    app.kubernetes.io/name: resource-autoscaler-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: resourcescalerpolicy-sample
+spec:
+  # TODO(user): Add fields here
